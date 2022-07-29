@@ -1,43 +1,12 @@
-## Firstly, I'd like to thanks [Hitesh Sir](https://twitter.com/Hiteshdotcom) & the team of [iNeuron](https://ineuron.ai) for designing such a beautiful project which made me realise my potential.
+- # Api-Page
 
-## 🚀 About Me
->I'm a front-end developer...
+  - ### This project is purely made up of writing HTML & CSS coding standards.
+  - ### All the images and fonts used in this project are provided as a part of this assignment. 
+  - ### This is how this page looks.
 
-
-# Hi, I'm shaQuib! 👋
-
-## 🛠 Skills used in building this project
->HTML5 & CSS...
-
-## Name of the Project
-
- > Developer Landing Page
- 
-## Time taken to complete this project
-> 8 hours
-
-## `Learning curve`
-***
-- Though it looks like a simple one but the amount of learning curve it has got is incredible.
-
-- Learned how to achieve a beautiful navbar with the help of `Flexbox and it's properties`
- - Learned when to use `absolute` and `relative` position properties of CSS
-
- - How to contain a button within an input field
-
- - How to apply CSS `transform & transition property`.
-
- - And most importantly the confidence to convert any wireframe into a brautiful web pages.
-
-## `Final Interface`
-
-*** 
-- Below is the screen shot of how does this web app page looks like while running on the browser.
-
-
-![localimages](./thumbnail/01.png)
-![localimages](./thumbnail/02.png)
-
-
-
-
+1. First Section
+![localimages](./screen-shots/01.png)
+2. Second Section
+![localimages](./screen-shots/02.png)
+3. Final Section
+![localimages](./screen-shots/03.png)
