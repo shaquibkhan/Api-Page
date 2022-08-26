@@ -5,6 +5,88 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+/* MEDIA QUERY */
+
+@media(max-width:768px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .download-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media(min-width:768px){
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+  }
+  .download-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media(max-width:1000px){
+  .medium-devices-header{
+      display: none;
+  }
+  .header-image{
+    display: none;
+  }
+  .blog-cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .blog-card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-section{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9edff;
+  }
+}
+@media(min-width:1001px){
+  .topnav{
+    display: none;
+  }
+  .blog-cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .blog-card{
+    display: flex;
+  }
+  .faq-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    justify-content: space-around;
+    background-color: #e9edff;
+  }
+}
+.hero-row{
+  display: flex;
+  justify-content: space-between;
+}
+.header-text{
+  color: #fff;
+  margin-left: 5%;
+}
 header{
   background-color: #4617fe;
   height: 65vh;
@@ -24,28 +106,26 @@ nav{
   margin-left: 12px;
   color: #fff;
 }
-.nav-item:hover,.nav-item-active:hover{
-  color: #89CFF0;
-}
+
 .nav-item-active{
   background-color: #fff;
   color:#4617fe;
   margin-left: 12px;
   border-radius: 6px;
 }
-.header-text{
- position: relative;
- top:20px;
- margin-left:60px;
- color: #fff;
+.dot{
+height: 4rem;
+margin-left: 1rem;
+margin-right: 1rem;
+margin-top: 1rem;
 }
-.header-text > img:hover{
-  background: #89CFF0;
+.blog-article-text{
+  display:flex;
+  flex-direction: column;
 }
-.header-image{
-  position: relative;
-  left: 937px;
-  top:-200px;
+.author{
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 .companies, .api-heading{
   margin-left: 68px;
@@ -57,24 +137,14 @@ nav{
   margin:0px 3px 0px 3px;
   font-weight: bold;
 }
-.cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 70px;
-}
+
 .card-active{
   box-shadow: 0 6px 12px 0 rgba(0.2,0.2,0.2,0.2);
   transition: 0.3s;
   border-radius: 5px; 
   width:20%;
 }
-.card:hover{
-  box-shadow: 0 6px 12px 0 rgba(0.2,0.2,0.2,0.2);
-  transition: 0.3s;
-  border-radius: 5px; 
-  width:17%;
-}
+
 .card-head-active, .card-body, .card-logo{
   margin-left: 10px;
 }
@@ -82,21 +152,13 @@ nav{
   margin-left: 68px;
   margin-top: 30px;
 }
-.blog-cards, .blog-card{
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-  /* margin-left: -30px; */
-  justify-content: space-around;
-  
-}
 .blog-card{
   box-shadow: 0 6px 12px 0 rgba(0.2,0.2,0.2,0.2);
   transition: 0.3s;
   border-radius: 5px; 
-  width:47%;
+  max-width:47%;
 }
-.blog-content{
+/* .blog-content{
   position: relative;
   left:180px;
 }
@@ -110,28 +172,14 @@ nav{
   position: relative;
   left:-115px;
   top: 23px;
-}
-.faq-section{
-  display: flex;
-  flex-direction: row;
-  margin-top: 90px;
-  justify-content: space-around;
-  background-color: #e9edff;
-}
+} */
+
 .faq-content > button{
   background-color: #4718fe;
   color: #fff;
   border: 1px solid #4718fe;
 }
-.faq-content > button:hover{
-/* color: #89CFF0; */
-background: #002D62;
-}
-.download-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .download-content > h1 > span{
   font-size: 22px;
 }
@@ -150,20 +198,13 @@ form > button{
   border-radius: 23px;
   padding: 8px 16px;
 }
-form > button:hover{
-  background:#002D62;
-}
+
 form >input{
   border: 1px solid #fff;
   border-radius: 23px;
   background-color: #e9edff;
   padding:15px 30px 15px 30px;
 }
-form >input:hover{
-  background: #89CFF0;
-  transition: 0.9s;
-}
-
 .download-email > form{
   border: 1px solid #000;
   border-radius: 23px;
@@ -178,10 +219,9 @@ form >input:hover{
 }
 .list{
   display: flex;
-  flex-direction: row;
   list-style-type: none;
   justify-content: space-evenly;
-  width:30%;
+  max-width:30%;
   color: #fff;
 }
 .logos-list{
@@ -197,24 +237,66 @@ form >input:hover{
 .list-items{
   margin-left: 20px;
 }
-.list-items:hover{
-  background: #6CB4EE;
-  box-shadow: 10px 12px 10px 0 rgba(0.6,0.2,0.2,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
+.footer-icons{
+  display: flex;
+  flex-direction: column;
+}
+.footer-icons p {
+ color: #fff;
+ margin-left: 1rem;
 }
 .footer-right{
-  position: relative;
-  margin-left: 640px;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
 }
 .footer-logos{
  margin-left: 12px;
 }
 
 
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #4617fe;
+  position: relative;
+}
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
 
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 
 
